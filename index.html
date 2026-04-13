@@ -7,7 +7,13 @@
     <style>
         /* עיצוב האתר */
         body {
-            background-color: #E0F7FA; /* צבע פסטל טורקיז בהיר */
+            /* רקע טורקיז עמוק יותר עם שקיפות, ומעליו דפוס מולקולרי */
+            background-color: #009688; /* צבע טורקיז עמוק כבסיס */
+            background-image: 
+                linear-gradient(rgba(0, 150, 136, 0.8), rgba(0, 150, 136, 0.8)), /* שכבת שקיפות טורקיז */
+                url('molecule-pattern.png'); /* דפוס מולקולות עדין */
+            background-repeat: repeat; /* הדפוס מרוצף לכל המסך */
+            background-position: center; /* הדפוס ממורכז */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             display: flex;
@@ -19,16 +25,16 @@
         }
 
         .container {
-            background-color: white;
+            background-color: white; /* קופסת טקסט לבנה כדי להבטיח קריאות מוחלטת */
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* צל עדין */
             max-width: 600px;
-            border: 2px solid #B2EBF2;
+            border: 2px solid #00ACC1; /* border טורקיז להתאמה */
         }
 
         h1 {
-            color: #00838F;
+            color: #00838F; /* צבע כותרת תואם */
             margin-bottom: 20px;
         }
 
@@ -40,7 +46,7 @@
 
         .highlight {
             font-weight: bold;
-            color: #006064;
+            color: #006064; /* צבע הדגשה כהה יותר */
         }
     </style>
 </head>
