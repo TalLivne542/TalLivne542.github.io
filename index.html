@@ -7,35 +7,34 @@
     <style>
         /* עיצוב האתר */
         body {
-            /* גוון טורקיז ים בהיר ורענן */
             background-color: #40E0D0; 
             background-image: 
-                /* שכבת שקיפות עדינה יותר כדי לתת תחושת עומק של מים */
                 linear-gradient(rgba(64, 224, 208, 0.6), rgba(64, 224, 208, 0.6)), 
                 url('molecule-pattern.png'); 
             background-repeat: repeat;
             background-position: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #2C3E50; /* צבע טקסט כהה ונעים לעין */
+            color: #2C3E50;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             text-align: center;
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.95); /* לבן כמעט אטום לקריאות מקסימלית */
+            background-color: rgba(255, 255, 255, 0.95);
             padding: 45px;
             border-radius: 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* צל רך יותר */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             max-width: 650px;
             border: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 20px;
         }
 
         h1 {
-            color: #008B8B; /* טורקיז כהה לכותרת */
+            color: #008B8B;
             margin-bottom: 25px;
             font-size: 2.2em;
             letter-spacing: 1px;
@@ -49,11 +48,29 @@
 
         .highlight {
             font-weight: bold;
-            color: #00796B; /* הדגשה בגוון ים עמוק */
+            color: #00796B;
         }
 
         strong {
             color: #005B5C;
+        }
+
+        /* עיצוב אזור יצירת הקשר */
+        .contact-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #B2EBF2;
+            font-size: 1em;
+        }
+
+        .contact-section a {
+            color: #008B8B;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -71,6 +88,10 @@
         <p>
             I hold a double major B.Sc. in <strong>Materials Science and Engineering and Chemistry</strong> from Tel Aviv University.
         </p>
+
+        <div class="contact-section">
+            <p>📞 If you have any further questions, please contact me at <a href="mailto:Tal.livne@weizmann.ac.il">Tal.livne@weizmann.ac.il</a></p>
+        </div>
     </div>
 
 </body>
